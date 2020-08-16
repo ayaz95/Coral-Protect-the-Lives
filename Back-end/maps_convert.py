@@ -18,7 +18,7 @@ def dummy_manhattan_distance(lat1, lng1, lat2, lng2):
     return a + b
 
 def datafetch(start,end): 
-    db = pymysql.connect(host="115.146.93.33",port=10188,user="govhack",password="govhack2020",db="govhack")
+    db = pymysql.connect(host="***",port=***,user="***",password="***",db="***")
     cursor = db.cursor()
     cursor.execute("select distinct(la), lo, sum(count) as \"nonharm\" from data where type = \"Non-Hazardous\" and date between {} and {} group by la;".format(start,end))
     nonharm_tupl = cursor.fetchall()
@@ -60,7 +60,7 @@ def find_near_river(combiane_data):
         ori_lo = combiane_data[i][1]
         ori_la = combiane_data[i][0]
         # Fetch from fast query
-        db = pymysql.connect(host="115.146.93.33",port=10188,user="govhack",password="govhack2020",db="govhack")
+        db = pymysql.connect(host="***",port=***,user="***",password="***",db="***")
         cursor = db.cursor()
         cursor.execute("select after_la, after_lo from fast_matching where ori_la = \"{}\" and ori_lo = \"{}\";".format(float(ori_la),float(ori_lo)))
         temp_data = cursor.fetchone()

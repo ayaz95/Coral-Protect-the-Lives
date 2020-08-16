@@ -40,6 +40,6 @@ def get_all_info():
         return "Fails"+str(e)
 
 if __name__ == "__main__":
-    # app.run(host='45.113.234.137',port=11233, debug = False)
+    # app.run(host='***',port=***, debug = False)
     print("Good bye!")
     app.run(host='0.0.0.0',port=9090, debug = True)
