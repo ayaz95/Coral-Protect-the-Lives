@@ -23,7 +23,8 @@ In addition, we also used Echarts, which is an open source visualization library
 ## Forecasting
 - Used ARIMA Time Series model for Forecasting.
 
-## Tableau - Tableau Dashboard is used for creating the correlation visualization between City of Melbourne suburbs and events conducted in the suburbs.
+## Tableau 
+- Tableau Dashboard is used for creating the correlation visualization between City of Melbourne suburbs and events conducted in the suburbs.
 
 ## Application Dashboard
 Please navigate to http://govhack.eventplus.cc/
