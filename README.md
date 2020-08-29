@@ -8,7 +8,7 @@
 
 ## Coordinate processing back-end development
 - The camera locations are not around the river, so to simulate a polluted river and make the project more meaningful, all camera locations are automatically assigned by the algorithm to a specific river location.
-- The calculation is done using a matching search algorithm based on the morhattan distance.
+- The calculation is done using a matching search algorithm based on the manhattan distance.
 - The use of cache mechanism greatly reduces user waiting time
 
 ## Front-end Dashboard Development
